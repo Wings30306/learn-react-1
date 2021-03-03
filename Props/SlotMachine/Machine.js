@@ -1,6 +1,7 @@
 class Machine extends React.Component {
     render() {
-        let slotsMatch = this.props.s1 === this.props.s2 && this.props.s1 === this.props.s3
+        let {s1, s2, s3} = this.props // destructuring props for easy reference
+        let slotsMatch = s1 === s2 && s1 === s3
         return (
             <div>
                 <h2>{this.props.s1} {this.props.s2} {this.props.s3}</h2>
